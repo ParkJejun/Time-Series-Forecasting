@@ -34,6 +34,7 @@ GRU(Gated Recurrent Units) 알고리즘은 LSTM을 변형시킨 알고리즘으�
 
 ### 3-2. Data loading and data exploration
 이 섹션에서는 학습에 사용할 AEP_hourly.csv의 데이터를 로드하고 데이터에 대해서 탐색했다. 추가적인 데이터 분석에 앞서, 데이터를 normalize 했다. normalize에는 sklearn MinMaxScaler를 사용했다. sklearn MinMaxScaler는 데이터의 최댓값과 최솟값을 계산해, 원하는 범위의 값으로 normalize 해준다. 아래는 data normalization 이후 데이터를 시각화한 것이다.
+
 ![image01](https://user-images.githubusercontent.com/69573261/91483299-774cdb80-e8e2-11ea-84bf-3eaa4c8e25f4.png)
 
 ### 3-3. Prepare data for training the RNN models
@@ -55,6 +56,7 @@ Training Time of GRU model = 18.03053 seconds
 
 ### 3-7. Compare predictions made by simple RNN, LSTM, GRU model
 단순히 R2 score 점수만 보면, 모델별로 얼마나 정확하게 예측했나 알기 쉽지 않기 때문에, 실제 데이터값과 예측된 데이터값을 시각화해 비교해보았다.
+
 ![image02](https://user-images.githubusercontent.com/69573261/91483301-787e0880-e8e2-11ea-9464-cbfef0fc1074.png)
 ![image03](https://user-images.githubusercontent.com/69573261/91483302-787e0880-e8e2-11ea-9a2d-215971811771.png)
 
